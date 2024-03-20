@@ -1,7 +1,11 @@
+import Button from "../../../../components/Button";
+import Posts from "../../../../components/Posts";
+
 function Computer() {
   return (
     <div>
-      <h2>computer</h2>
+      <Button />
+      <Posts />
     </div>
   );
 }
