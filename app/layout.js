@@ -1,17 +1,15 @@
-import NavBar from "../components/NavBar";
-import { Roboto } from "next/font/google";
+import "./globals.css";
+import Navbar from "../src/components/Navbar";
 
-const roboto = Roboto({
-  weight: ["400"],
-  subsets: ["latin"],
-});
-
-export default function RootLayout({ children }) {
+export default async function RootLayout({ children }) {
   return (
-    <html lang="en" className={roboto.className}>
-      <body>
-        <NavBar />
-        {children}
+    <html lang="en">
+      <body
+        className="container mx-auto h-screen flex justify-center
+      "
+      >
+        <Navbar />
+        <main>{children}</main>
       </body>
     </html>
   );
